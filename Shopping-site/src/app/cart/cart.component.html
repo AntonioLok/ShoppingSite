@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="title"> Shopping Bag </div>
+
+<div class="items-container" *ngFor="let product of productService.productsCheckOut"> 
+  <div class="item-section">
+    <img src={{product.img}}>
+    <div class="info">
+      <div class="text"> {{product.name}} </div>
+      <div class="text"> Size: {{product.sizeSelected}} </div>
+      <div class="small-container">
+        <button class="btn" (click)="delete(product)"><i class="fa fa-trash"></i> </button> 
+        <select class="amount" (change)="selectChangeHandler($event.target.value, product)" required>
+          <option *ngFor="let n of amountOption" [selected]="n==product.amount"> {{n}} </option>
+        </select>
+
+    </div>
+    </div>
+    <div class="text" style="font-weight:bold"> {{product.price * product.amount}} </div>
+  </div>
+  <br>
+</div>
+
+<div class="final">
+  <p> Total Products: {{total}} CAD </p>
+  <p> Estimated Shipping Rates: 0 CAD </p>
+  <p> TOTAL: {{total}} CAD</p>
+</div>

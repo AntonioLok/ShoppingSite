@@ -1,0 +1,17 @@
+.log-in-container {
+	width: 800px;
+	display: flex;
+	margin: 0 auto;
+	text-align: center;
+	justify-content: space-evenly;
+	margin-bottom: 60px;
+}
+
+.alert {
+	color: red;
+	font-size: 14px;
+}
+
+#alert-success {
+	color: green;
+}

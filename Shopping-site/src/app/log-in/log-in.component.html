@@ -1,0 +1,33 @@
+<div class="log-in-container">
+
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm" >
+    <div class="form-group">
+      <label for="username"> Username (e-mail): </label>
+      <input type="email" class="form-control" id="username" 
+      [(ngModel)]="user.username" name="uname" required autocomplete="username">
+    </div>
+
+    <br>
+
+    <div class="form-group">
+      <label for="password"> Password: </label>
+      <input type="password" class="form-control" id="password"
+      [(ngModel)]="user.password" name="pwd" autocomplete="current-password" required>
+    </div>
+
+    <br>
+
+     <div [hidden]="!incorrect" class="alert alert-danger"> {{message}} </div>
+
+    <br>
+    <button type="submit" class="btn btn-success" [disabled]="!loginForm.form.valid"> Log in! </button>
+
+  </form>
+
+  <div class="signup">
+    <p> New customer? </p>
+    <button routerLink='/sign-up'> Register here! </button>
+  </div>
+
+</div>
+

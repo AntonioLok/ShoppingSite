@@ -1,0 +1,27 @@
+.container {
+	width: 1200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.column-menu {
+	margin-top: 20px;
+	width: 200px;
+	float: left;
+}
+
+.right-section {
+	width: 900px;
+	margin-bottom: 40px;
+}
+
+.right-section img{
+	width: 900px;
+	height: 700px;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 25px;
+	cursor: pointer;
+}
