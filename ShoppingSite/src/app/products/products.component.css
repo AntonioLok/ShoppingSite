@@ -1,0 +1,40 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.column-menu {
+	min-width: 200px;
+	float: left;
+}
+
+.display-products {
+}
+
+.section {
+	width: 950px;
+	display: flex;
+	text-align: center;	
+	#justify-content: space-around;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	flex-flow: row wrap;
+}
+
+.section img {
+	margin-left: 15px;
+	margin-right: 15px;
+  width: 275px;
+  height: 370px;
+}
+
+li {
+	list-style-type: none;
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+
+.img-text-bottom{
+	margin-bottom: 30px;
+}

@@ -1,0 +1,30 @@
+<div class="container">
+
+  <div class="column-menu" *ngIf="category=='men'">
+    <ul>
+      <li routerLink="./t-shirts"> T-Shirts </li>
+      <li routerLink="./jeans"> Jeans </li>
+      <li routerLink="./hoodies&sweatshirts"> Hoodies & Sweatshirts </li>
+      <li routerLink="./shoes"> Shoes </li>
+    </ul>
+  </div>
+
+  <div class="right-section" *ngIf="category=='men'">
+    <img src="http://lp2.hm.com/hmgoepprod?set=width[800],quality[80],options[limit]&source=url[http://www2.hm.com/content/dam/Campaign%20Men%20s07/30x/30X-Men-Summer-Shop-Beach-3x2.jpg]&scale=width[global.width],height[15000],options[global.options]&sink=format[jpg],quality[global.quality]"> 
+  </div>
+
+  <div class="column-menu" *ngIf="category=='women'">
+    <ul>
+      <li routerLink="./dresses"> Dresses </li>
+      <li routerLink="./jackets&coats"> Jackets & Coats </li>
+      <li routerLink="./jeans"> Jeans </li>
+      <li routerLink="./pants"> Pants </li>
+    </ul>
+  </div>
+
+  <div class="right-section" *ngIf="category=='women'">
+    <img src="https://thumbs.dreamstime.com/b/colorful-collection-women-s-clothes-23554117.jpg"> 
+  </div>
+
+
+</div>

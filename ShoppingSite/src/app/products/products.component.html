@@ -1,0 +1,29 @@
+<div class="container">
+
+  <div class="column-menu" *ngIf="category=='men'">
+    <ul>
+      <li routerLink="./../t-shirts"> T-Shirts </li>
+      <li routerLink="./../jeans"> Jeans </li>
+      <li routerLink="./../hoodies&sweatshirts"> Hoodies & Sweatshirts </li>
+      <li routerLink="./../shoes"> Shoes </li>
+    </ul>
+  </div>
+
+  <div class="column-menu" *ngIf="category=='women'">
+    <ul>
+      <li routerLink="./../dresses"> Dresses </li>
+      <li routerLink="./../jackets&coats"> Jackets & Coats </li>
+      <li routerLink="./../jeans"> Jeans </li>
+      <li routerLink="./../pants"> Pants </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="product" *ngFor="let product of products" routerLink="/products/detail/{{product._id}}">
+      <img src={{product.img}}>
+      <div class="img-text"> {{product.name}} </div>
+      <div class="img-text-bottom"> {{product.price}} </div>
+    </div>  
+  </div>
+
+</div>
