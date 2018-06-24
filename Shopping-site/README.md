@@ -10,7 +10,7 @@ Use the following command line:
 
 `node server`
 
-and navgiate to http://localhost:3000
+and navigate to http://localhost:3000
 
 # About the project
 This is a online shopping store project where users can register for an account and select any clothing that they want to purchase
