@@ -3,7 +3,10 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 This project was developed using the MEAN stack.
 
-![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Meanstack-624x250.jpg/450px-Meanstack-624x250.jpg)
+![alt text](https://github.com/AntonioLok/ShoppingSite/blob/master/Shopping-site/images/pic1.png)
+![alt text](https://github.com/AntonioLok/ShoppingSite/blob/master/Shopping-site/images/pic2.png)
+![alt text](https://github.com/AntonioLok/ShoppingSite/blob/master/Shopping-site/images/pic3.png)
+![alt text](https://github.com/AntonioLok/ShoppingSite/blob/master/Shopping-site/images/pic4.png)
 
 # To run the project
 Use the following command line:
